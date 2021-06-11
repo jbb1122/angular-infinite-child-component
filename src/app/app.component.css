@@ -1,3 +1,4 @@
-p {
-  font-family: Lato;
+.post {
+  padding: 10px;
+  border-left: solid 1px;
 }

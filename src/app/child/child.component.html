@@ -1,0 +1,9 @@
+<div class="child" *ngFor="let d of data;let i = index">
+  {{d}}
+  <div class="toolbar">
+    <input (keyup)="keyUp($event, i)" />
+  </div>
+  <ng-container *ngIf="replies[i]">
+    <app-child [data]="replies[i]"></app-child>
+  </ng-container>
+</div>

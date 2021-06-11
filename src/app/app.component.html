@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="post">
+  This is Angular test project to test infinite child component.
+  <div class="toolbar">
+    <input (keyup)="keyUp($event)">
+  </div>
+  <app-child [data]="replies"></app-child>
+</div>
